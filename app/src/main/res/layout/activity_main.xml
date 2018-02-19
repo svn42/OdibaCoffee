@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Your design must include:
+
+Business name
+At least one photo representing the business
+Two or more other pieces of information, such as:
+Contact information for the business (eg phone number, email address, website)
+Address of the Business
+Description of business
+Hours of operation
+
+
+Note: Reviewers will test on a Nexus 5X which has a screen size of 5.2 inches (132.08mm). It is advised you test on this size at minimum. If your content does not fit on this size, consider implementing a ScrollView.
+
+
+Code Review:
+
+XML must include a Relative Layout and/or a Linear Layout
+
+Must have one or more image views or text views.
+
+Elements are specified in dp, text is specified in sp.
+
+
+-->
+
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:src="@drawable/udacity"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Udacity"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="40dp"
+
+        android:text="2465 Latham St"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="40dp"
+
+        android:text="Mountain View, CA 94043"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="20dp"
+
+        android:text="650-555-5555"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+</LinearLayout>
