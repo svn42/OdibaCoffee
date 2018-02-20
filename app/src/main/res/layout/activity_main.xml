@@ -26,68 +26,101 @@ Elements are specified in dp, text is specified in sp.
 -->
 
 
-
-
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical" >
 
-    <ImageView
-        android:src="@drawable/udacity"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="6"
-        android:scaleType="centerCrop"
-        android:layout_marginBottom="20dp"
+        android:layout_weight="3"
+        >
+        <ImageView
+            android:src="@drawable/slider3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:src="@drawable/odiba_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#1d0a03"
         />
-
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#36160a"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:paddingLeft="40dp">
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="Udacity"
-        android:textSize="20dp"
+        android:text="Odiba Coffee"
+        android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@android:color/white"
         />
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Goldberglatz 6a"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-small"
+        android:textColor="@android:color/white"
 
-        android:text="2465 Latham St"
-        android:textSize="18dp"
-        android:fontFamily="sans-serif-smallcaps"
         />
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:text="45897 Gelsenkirchen"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-small"
+        android:textColor="@android:color/white"
 
-        android:text="Mountain View, CA 94043"
-        android:textSize="18dp"
-        android:fontFamily="sans-serif-smallcaps"
         />
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:text="0209 – 2754 03 54"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-small"
+        android:textColor="@android:color/white"
 
-        android:text="650-555-5555"
-        android:textSize="18dp"
-        android:fontFamily="sans-serif-smallcaps"
         />
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="E-Mail: info@odiba-coffee.de"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-small"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
 </LinearLayout>
+
+</ScrollView>
