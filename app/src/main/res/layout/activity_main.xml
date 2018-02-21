@@ -1,126 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Your design must include:
-
-Business name
-At least one photo representing the business
-Two or more other pieces of information, such as:
-Contact information for the business (eg phone number, email address, website)
-Address of the Business
-Description of business
-Hours of operation
-
-
-Note: Reviewers will test on a Nexus 5X which has a screen size of 5.2 inches (132.08mm). It is advised you test on this size at minimum. If your content does not fit on this size, consider implementing a ScrollView.
-
-
-Code Review:
-
-XML must include a Relative Layout and/or a Linear Layout
-
-Must have one or more image views or text views.
-
-Elements are specified in dp, text is specified in sp.
-
-
--->
-
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white"
-    android:orientation="vertical" >
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3"
-        >
-        <ImageView
-            android:src="@drawable/slider3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:layout_centerHorizontal="true"
-            />
-        <ImageView
-            android:src="@drawable/odiba_logo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            />
-
-
-        </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="#1d0a03"
-        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#36160a"
-        android:orientation="vertical"
-        android:layout_weight="4"
-        android:paddingLeft="40dp">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Odiba Coffee"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Goldberglatz 6a"
-        android:textSize="18sp"
-        android:fontFamily="sans-serif-small"
-        android:textColor="@android:color/white"
+        android:orientation="vertical">
 
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="45897 Gelsenkirchen"
-        android:textSize="18sp"
-        android:fontFamily="sans-serif-small"
-        android:textColor="@android:color/white"
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
 
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="0209 – 2754 03 54"
-        android:textSize="18sp"
-        android:fontFamily="sans-serif-small"
-        android:textColor="@android:color/white"
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/background" />
 
-        />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:text="E-Mail: info@odiba-coffee.de"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-small"
-            android:textColor="@android:color/white"
-            />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/odiba_logo" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineWidthBig"
+            android:background="@color/odibaGreen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/odibaBrown"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/marginBig">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginBig"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/app_name"
+                android:textColor="@color/odibaGreen"
+                android:textSize="@dimen/titleSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginSmall"
+                android:fontFamily="sans-serif-small"
+                android:text="@string/address"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-small"
+                android:text="@string/postal"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin"
+                android:fontFamily="sans-serif-small"
+                android:text="@string/phone"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lineWidthSmall"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_marginRight="@dimen/marginBig"
+                android:background="@color/odibaGreen"
+
+                />
+            <!-- mail -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-small"
+                    android:text="@string/email"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="email"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/email_address"
+                    android:textColor="@android:color/white"
+                    android:textColorLink="@color/odibaGreen"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+            <!-- website -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif-small"
+                    android:text="@string/website"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:autoLink="web"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/website_url"
+                    android:textColor="@android:color/white"
+                    android:textColorLink="@color/odibaGreen"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+        </LinearLayout>
+
     </LinearLayout>
-</LinearLayout>
 
 </ScrollView>

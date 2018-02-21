@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lineWidthBig">8dp</dimen>
+    <dimen name="lineWidthSmall">4dp</dimen>
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="titleSize">32sp</dimen>
+    <dimen name="margin">20dp</dimen>
+    <dimen name="marginBig">40dp</dimen>
+    <dimen name="marginSmall">10dp</dimen>
+</resources>

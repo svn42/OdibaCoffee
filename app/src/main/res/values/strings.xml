@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Odiba Coffee</string>
+    <string name="address">Goldberglatz 6a</string>
+    <string name="postal">45897 Gelsenkirchen</string>
+    <string name="phone">0209 – 2754 03 54</string>
+    <string name="email">E-Mail:\u0020</string>
+    <string name="website">Website:\u0020</string>
+    <string name="email_address"> info@odiba-coffee.de</string>
+    <string name="website_url"> odiba-coffee.de</string>
 </resources>
